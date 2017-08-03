@@ -1,11 +1,11 @@
-const port = 5000,
+const port = 3072,
     express = require('express'),
     app = express();
 
 
 
 app.get('/', (req, res) => {
-    res.send({ hi: 'there'})
+    res.status(200).send({ bye: 'buddy'})
 });
 
 
