@@ -1,6 +1,6 @@
 const  passport = require('passport'),
     googleStrategy = require('passport-google-oauth20').Strategy,
-    config = require('../config');
+    config = require('../config/config');
 
 passport.use(new googleStrategy({
     clientID: config.googleClientID,
