@@ -1,6 +1,10 @@
-const config = require('./config/config'),
+const config = require('./config'),
     express = require('express'),
-    app = express();
+    app = express(),
+    mongoose = require('mongoose');
+
+mongoose.connect(config.db)
+
 require('./services/passport');
 require('./routes/authRoutes')(app);
 require('./routes/home')(app);
