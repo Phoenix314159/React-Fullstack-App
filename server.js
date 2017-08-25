@@ -5,6 +5,7 @@ const config = require('./config'),
 
 mongoose.connect(config.db)
 
+require('./models/user'); // has to be required first so passport can access users model
 require('./services/passport');
 require('./routes/authRoutes')(app);
 require('./routes/home')(app);
