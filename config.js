@@ -7,5 +7,5 @@ module.exports = {
     googleClientSecret: 'MkWh8xlEAdwSCw_YoAWAz4tQ',
     cookieKey: 'ouiqwhegfoujyg*^%$*^%#&%^$#kjhgtyfiytf',
     cookieAge: 2592000000,
-    redirectUrl: `http://localhost:${port}`
+    redirectUrl: `https://feedback-app123.herokuapp.com/`
 }
